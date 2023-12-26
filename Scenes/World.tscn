@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cojxp5yxe4iw3"]
+
+[ext_resource type="PackedScene" uid="uid://nkelxly2cipr" path="res://Actors/Flappy/Flappy.tscn" id="1_jearn"]
+
+[node name="World" type="Node2D"]
+
+[node name="Flappy" parent="." instance=ExtResource("1_jearn")]
+
+[node name="Camera" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
