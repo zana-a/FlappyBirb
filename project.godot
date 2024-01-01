@@ -12,14 +12,12 @@ config_version=5
 
 config/name="FlappyBirb"
 run/main_scene="res://Scenes/World.tscn"
-config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/features=PackedStringArray("4.2", "C#", "Mobile")
 
 [display]
 
 window/size/viewport_width=720
 window/size/viewport_height=1240
-window/size/resizable=false
 window/handheld/orientation=1
 
 [dotnet]

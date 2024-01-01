@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6sbdgifs0bgb"]
+
+[ext_resource type="Texture2D" uid="uid://cu1u788otsi0j" path="res://Assets/Sprites/redbird-upflap.png" id="1_bfqbv"]
+[ext_resource type="Texture2D" uid="uid://lc0g2mpu1oj3" path="res://Assets/Sprites/redbird-midflap.png" id="2_5ye5i"]
+[ext_resource type="Texture2D" uid="uid://bwa3nhyw2c6q1" path="res://Assets/Sprites/redbird-downflap.png" id="3_f3xun"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_57yvm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bfqbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5ye5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f3xun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5ye5i")
+}],
+"loop": true,
+"name": &"Flap",
+"speed": 12.0
+}]
+
+[node name="FlappyRed" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_57yvm")
+animation = &"Flap"
+frame_progress = 0.475914

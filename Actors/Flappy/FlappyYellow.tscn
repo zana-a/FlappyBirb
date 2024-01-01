@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwin7eshqsxmd"]
+
+[ext_resource type="Texture2D" uid="uid://bm2d0c3dirs3w" path="res://Assets/Sprites/yellowbird-upflap.png" id="1_dstar"]
+[ext_resource type="Texture2D" uid="uid://iw4i8fjyhajq" path="res://Assets/Sprites/yellowbird-midflap.png" id="2_ftoif"]
+[ext_resource type="Texture2D" uid="uid://dm7njvmxpjope" path="res://Assets/Sprites/yellowbird-downflap.png" id="3_qk4cb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_57yvm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dstar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ftoif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qk4cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ftoif")
+}],
+"loop": true,
+"name": &"Flap",
+"speed": 12.0
+}]
+
+[node name="FlappyYellow" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_57yvm")
+animation = &"Flap"
+frame_progress = 0.0647404

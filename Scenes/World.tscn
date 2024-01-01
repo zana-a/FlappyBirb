@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cojxp5yxe4iw3"]
+[gd_scene load_steps=3 format=3 uid="uid://cojxp5yxe4iw3"]
 
 [ext_resource type="PackedScene" uid="uid://nkelxly2cipr" path="res://Actors/Flappy/Flappy.tscn" id="1_jearn"]
+[ext_resource type="PackedScene" uid="uid://r520kb7i33an" path="res://Actors/Background/Background.tscn" id="2_lceqc"]
 
 [node name="World" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("2_lceqc")]
 
 [node name="Flappy" parent="." instance=ExtResource("1_jearn")]
 

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://csfrhf85ehw45"]
+
+[ext_resource type="Texture2D" uid="uid://cucs3aamicwjr" path="res://Assets/Sprites/bluebird-upflap.png" id="1_wgvue"]
+[ext_resource type="Texture2D" uid="uid://16iya4gwx4ju" path="res://Assets/Sprites/bluebird-midflap.png" id="2_at7w7"]
+[ext_resource type="Texture2D" uid="uid://dnok5627wy65u" path="res://Assets/Sprites/bluebird-downflap.png" id="3_6muyv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_57yvm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wgvue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_at7w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6muyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_at7w7")
+}],
+"loop": true,
+"name": &"Flap",
+"speed": 12.0
+}]
+
+[node name="FlappyBlue" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_57yvm")
+animation = &"Flap"
+frame_progress = 0.0878388

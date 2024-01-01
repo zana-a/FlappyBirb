@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://c11s1omtmotay"]
+
+[ext_resource type="Texture2D" uid="uid://b2pc4ul1mqpi4" path="res://Assets/Sprites/background-night.png" id="1_5llef"]
+
+[node name="BackgroundNight" type="Node2D"]
+
+[node name="First" type="Sprite2D" parent="."]
+texture = ExtResource("1_5llef")
+
+[node name="Second" type="Sprite2D" parent="."]
+position = Vector2(288, 0)
+texture = ExtResource("1_5llef")
