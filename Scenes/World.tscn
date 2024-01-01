@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cojxp5yxe4iw3"]
+[gd_scene load_steps=4 format=3 uid="uid://cojxp5yxe4iw3"]
 
 [ext_resource type="PackedScene" uid="uid://nkelxly2cipr" path="res://Actors/Flappy/Flappy.tscn" id="1_jearn"]
 [ext_resource type="PackedScene" uid="uid://r520kb7i33an" path="res://Actors/Background/Background.tscn" id="2_lceqc"]
+[ext_resource type="PackedScene" uid="uid://ba514q5xralvd" path="res://Actors/Floor/Floor.tscn" id="3_takli"]
 
 [node name="World" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("2_lceqc")]
+
+[node name="Floor" parent="." instance=ExtResource("3_takli")]
 
 [node name="Flappy" parent="." instance=ExtResource("1_jearn")]
 
